@@ -22,6 +22,10 @@ fetch("https://api.spoonacular.com/recipes/random?apiKey=078ee27527f84853abaf1d2
 	console.log(err);
 });
 */
+const searchform = document.querySelector("#searchform");
+// const randomform = 
+// const ingform =
+
 
 //   ** Recipe Search ** EDAMAM API
 const APP_ID = "6e21c9f4";
