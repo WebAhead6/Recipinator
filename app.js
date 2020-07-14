@@ -1,4 +1,51 @@
+//    ** Random ** Search Recipe - Food - Nutrition API
+/*
+fetch("https://api.spoonacular.com/recipes/random?apiKey=078ee27527f84853abaf1d220fd9d1b6&", {
+})
+.then(response => {
+  return response.json()
+	console.log(response);
+})
+.then(response=>{
+  // Random dish generator
+  console.log(response);
+  console.log(response.recipes[0].summary);
+  // Title
+  const recipeTitle = document.querySelector("#recipe-title");
+  recipeTitle.textContent = response.recipes[0].title;
+  // recipe summary
+  const recipeSummary = document.querySelector("#recipe-summary");
+  recipeSummary.innerHTML = response.recipes[0].summary;
+  
+})
+.catch(err => {
+	console.log(err);
+});
+*/
 
+//   ** Recipe Search ** EDAMAM API
+const APP_ID = "6e21c9f4";
+const API_KEY = "ddea9e15893170954aaea4c65bad68f0"
+// change "seachfieldid.value" in the line below to search field button id
+fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=${encodeURI(seachfieldid.value)}`, { 
+})
+.then(response => {
+  return response.json()
+})
+.then(response=>{
+  // Search dish
+  console.log(response);
+  // Title
+  //const searchRecipeTitle = document.querySelector("#recipe-title");
+  //searchRecipeTitle.textContent = response.recipes[0].title;
+  // recipe summary
+  //const searchRecipeSummary = document.querySelector("#search-recipe-summary");
+  //searchRecipeSummary.innerHTML = response.recipes[0].summary;
+  
+})
+.catch(err => {
+	console.log(err);
+});
 
 
 
