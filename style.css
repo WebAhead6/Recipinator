@@ -238,3 +238,39 @@ section {
 .forms :-ms-input-placeholder {  
    color: #ecf0f1;  
 }
+
+
+/*----------- RESULTS VIEW ------------- */
+#info .resContainer{
+  padding: 4%;
+  padding-top: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.card{
+  width: 17%;
+}
+
+.fullcard {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+
+}
+
+.imger {
+  padding-left: 10%;
+
+}
+
+#loader{
+  display: flex;
+  justify-content: center;
+}
+#loader > img {
+  display: flex;
+  justify-content: center;
+}
