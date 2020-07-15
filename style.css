@@ -156,6 +156,8 @@ section {
 /*------- form css ----------*/
 .forms {
   padding-top: 5%;
+  padding-bottom: 5%;
+
   display: flex;
     flex-flow: wrap;
     justify-content: space-around;
@@ -251,6 +253,8 @@ section {
 }
 
 .card{
+  display: flex;
+  flex-flow: wrap;
   width: 17%;
 }
 
@@ -274,3 +278,12 @@ section {
   display: flex;
   justify-content: center;
 }
+.pager{
+  
+  padding-top: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
