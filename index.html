@@ -64,8 +64,8 @@
           <h4 class="text">for the times when we are not sure what we want to devour</h4>
           
           <br>
-          <input type="text" id="tags" name="tags" class="formStyle" placeholder="Optional: insert Tags seprated by a comma for narrow the randomness" />
-          <p>(ex : vegetarian,dessert)</p><br>
+          <input type="text" id="tags" name="tags" class="formStyle" placeholder="Optional: insert Tags seprated to narrow the randomness, we need something work with" required/>
+          <p>(ex : vegetarian, dessert, burger, meat, lobster)</p><br>
           <button type="submit" class="formButton">Submit</button>
           <!-- <span class="topright" id="foo" onclick="toggle_visibility('foo')">x</span> -->
 
@@ -105,6 +105,10 @@
 
    <!-- API SECTION SHOULD GO HERE -->
    <section id="info">
+    <div id="loader" style="display: none"><img src='./loader.gif'></div>
+    <div id="res" class="resContainer">
+        
+     </div>
     <h1 id="recipe-title"></h1>
     <div id="recipe-summary"></div>
     <div id="search-recipe-summary"></div>
@@ -125,6 +129,8 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/d80816eaa3.js" crossorigin="anonymous"></script>
+
   </body>
 
 </html>
