@@ -54,17 +54,17 @@
       <div class="tab nav-pills nav-fill">
         <button class="tablinks nav-item " onclick="openMenu(event, 'random')">Random Dish</button>
         <button class="tablinks nav-item " onclick="openMenu(event, 'search')">Search</button>
-        <button class="tablinks nav-item " onclick="openMenu(event, 'ing')">Search by ing</button>
+        <!-- <button class="tablinks nav-item " onclick="openMenu(event, 'ing')">Search by ing</button> -->
       </div>
 
       <!-- Tab content -->
       <div id="random" class="tabcontent">
-        <form class="forms" id='randomform'>
+        <form class="forms" id='randomform' >
           <h3 class="text">Random Submitter</h3>
           <h4 class="text">for the times when we are not sure what we want to devour</h4>
           
           <br>
-          <input type="text" name="tags" class="formStyle" placeholder="Optional: insert Tags seprated by a comma for narrow the randomness" />
+          <input type="text" id="tags" name="tags" class="formStyle" placeholder="Optional: insert Tags seprated by a comma for narrow the randomness" />
           <p>(ex : vegetarian,dessert)</p><br>
           <button type="submit" class="formButton">Submit</button>
           <!-- <span class="topright" id="foo" onclick="toggle_visibility('foo')">x</span> -->
@@ -81,14 +81,13 @@
           <h5>for when we know exactly what we want to devour</h5>
           
           <br>
-          <input type="text" name="name" class="formStyle" placeholder="Inset Food Query " required/>
+          <input type="text" id="foodquery" name="name" class="formStyle" placeholder="Inset Food Query " required/>
           <p>(ex : burger)</p><br>
           <button type="submit" class="formButton">Submit</button>
 
       </form>
     </div>
-
-    <div id="ing" class="tabcontent">
+    <!-- <div id="ing" class="tabcontent">
       <form class="forms" id="form">
         <form class="forms" id="ingform">
           <h3 class="text">Search by ingredints</h3>
@@ -99,21 +98,16 @@
           <p>(ex : apples,flour,sugar)</p><br>
           <button type="submit" class="formButton">Submit</button>
       </form>
-    </div>
+    </div> -->
     </div>
     </div>
     <!-- end of the tab section -->
+
    <!-- API SECTION SHOULD GO HERE -->
    <section id="info">
     <h1 id="recipe-title"></h1>
     <div id="recipe-summary"></div>
     <div id="search-recipe-summary"></div>
-  </section>
-
-  <section>
-      <div class="container">
-      <!-- form section -->
-             
   </section>
 
     <!-- END OF THE api secion -->
